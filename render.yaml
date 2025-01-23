@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: fog-assignment-backend
+    env: node
+    plan: free  # You can choose a plan based on your usage
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: MONGO_URI
+        value: "MONGO_URI=mongodb+srv://coder-aadi:Asdf%401234@cluster0.x015l.mongodb.net/fog_assignment"
+      - key: PORT
+        value: "8080"  # Default port (You can change if your app uses a different port)
+    routes:
+      - src: /api/*
+        dest: /api/*  # Define routing if necessary

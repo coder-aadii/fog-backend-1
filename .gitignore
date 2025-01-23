@@ -1,0 +1,31 @@
+# Node modules
+/node_modules/
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+
+# IDE and editor files
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build and distribution files
+/build/
+/dist/
+
+# MongoDB database files
+/mongo_data/
+
+# Coverage directory for testing
+/coverage/
+
+# Miscellaneous
+*.log
